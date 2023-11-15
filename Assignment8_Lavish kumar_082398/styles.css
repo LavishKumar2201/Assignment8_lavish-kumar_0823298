@@ -1,0 +1,56 @@
+/* Extra small screens */
+@media (max-width: 575.98px) {
+    .bg-primary {
+        background-color: rgb(204, 236, 255) !important;
+    }
+    .bg-secondary {
+        background-color: rgb(255, 215, 159) !important;
+    }
+    .bg-success {
+        background-color: rgb(194, 240, 189) !important;
+    }
+    .bg-info {
+        background-color: rgb(255, 204, 204) !important;
+    }
+    .bg-warning {
+        background-color: rgb(255, 255, 153) !important;
+    }
+}
+
+/* Small to medium screens */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .bg-primary {
+        background-color: rgb(163, 214, 255) !important;
+    }
+    .bg-secondary {
+        background-color: rgb(255, 235, 148) !important;
+    }
+    .bg-success {
+        background-color: rgb(124, 197, 118) !important;
+    }
+    .bg-info {
+        background-color: rgb(255, 172, 172) !important;
+    }
+    .bg-warning {
+        background-color: rgb(204, 255, 102) !important;
+    }
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+    .bg-primary {
+        background-color: rgb(77, 166, 255) !important;
+    }
+    .bg-secondary {
+        background-color: rgb(255, 206, 86) !important;
+    }
+    .bg-success {
+        background-color: rgb(43, 143, 71) !important;
+    }
+    .bg-info {
+        background-color: rgb(255, 123, 123) !important;
+    }
+    .bg-warning {
+        background-color: rgb(153, 255, 51) !important;
+    }
+}

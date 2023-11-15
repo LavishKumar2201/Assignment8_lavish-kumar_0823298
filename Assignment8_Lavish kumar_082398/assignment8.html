@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <title>Three Men in a Boat</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1 class="text-primary">Three Men in a Boat</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-info p-4">
+                    <h2>Book Information</h2>
+                    <p>Title: Three Men in a Boat (To Say Nothing of the Dog)
+                        Author: Jerome K. Jerome
+                        Genre: Humor, Fiction
+                        Published: 1889
+                        Setting: Victorian England, along the River Thames</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-success p-4">
+                    <h2>Characters</h2>
+                    <p>Jerome: The witty narrator
+                        George: Jerome's lazy yet humorous friend
+                        Harris: Confident but often misguided</p>
+                </div>
+            </div>
+            <div class="col-md-4 clickable-column" data-toggle="popover" data-placement="top" title="Memorable Moments"
+                data-content="Highlighting memorable moments...">
+                <div class="bg-warning p-4">
+                    <h2>Memorable Moments</h2>
+                    <p>Montmorency: The mischievous dog's antics
+                        Packing for the trip
+                        Navigating the Hampton Court Maze</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+                <div class="bg-secondary p-4">
+                    <h2>Themes Explored</h2>
+                    <p>Friendship dynamics
+                        Humor and Satire
+                        Nature and Travel descriptions</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4 clickable-column" data-toggle="popover" data-placement="top"
+                title="Personal Insights" data-content="This column contains personal insights...">
+                <div class="bg-primary p-4">
+                    <h2>Personal Insights</h2>
+                    <p>"Three Men in a Boat" is a timeless classic combining humor, camaraderie, and scenic descriptions.
+                        The camaraderie between the friends and their escapades during the boating trip make it a delightful read.
+                        It's a perfect blend of humor, travel, and friendship."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let popovers = document.querySelectorAll('[data-toggle="popover"]');
+            popovers.forEach(function (popover) {
+                popover.addEventListener('click', function () {
+                    alert('This is a popover for ' + popover.title);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
